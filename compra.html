@@ -1,0 +1,94 @@
+<!-- Jasbro-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estiloso.css">
+</head>
+<body>
+
+	<div id="cabeza" align="center">
+		<img src="jasbro_logo.png" alt="Jasbro logo" height="130px">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="producto.html">Productos</a>
+				</li>
+				<li><a href="categoria.html">Categoria</a></li>
+				<li><a href="cliente.html">Cliente</a></li>
+				<li><a href="compra.html">Compra</a></li>
+			</ul>
+		</div>		
+	
+	</div>
+
+	
+	
+
+	<div id="cuerpo">
+		
+		<h2>Compra: </h2>
+		<form action="" method="POST">
+			<table border="1">
+				<tr>
+					<td>Codigo compra: </td>
+					<td></td>
+					<td>
+						<!-- aqui va el codigo php que llena la lista con los codigos de compra-->
+						<select name="selectCodigo">
+						  <?php ?>
+						</select>
+					</td>
+					
+				</tr>
+					<td>Rut cliente: </td>
+					<td>
+						<select name="selectRut">
+						  <?php ?>
+						</select>
+					</td>
+					<td><input type="text" id="txtRut"></td>
+				<tr>
+					<td>Id producto: </td>
+					<td>
+						<select name="selectIDProducto">
+						  <?php ?>
+						</select>
+
+					</td>
+					<td><input type="text" id="txtIDProducto"></td>
+				</tr>
+					<td><input type="submit" value="Ingresar" name="btnIngresar"></td>
+					<td><span id="msjeIngresar">holi</span></td>
+					<td></td>
+				<tr>
+					<td><input type="submit" value="Modificar" name="btnModificar"></td>
+					<td><span id="msjeModificar"></span></td>
+					<td></td>
+				</tr>
+					<td><input type="submit" value="Eliminar" name="btnEliminar"></td>
+					<td><span id="msjeEliminar"></span></td>
+					<td></td>
+				<tr>
+					
+				</tr>
+
+				<tr>
+					
+				</tr>
+
+				
+			</table>
+		</form>
+
+	</div>
+
+	<div id="pie">
+		<p>Jasbro 2017</p>
+	</div>
+
+
+
+</body>
+</html>
